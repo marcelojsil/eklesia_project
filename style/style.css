@@ -1,27 +1,64 @@
-*{margin: 0;padding: 0;}
+*{margin: 0;padding: 0;text-decoration: none;}
 :root{
+    /*CORES DO SISTEMA*/
     --cor1:#8a7c66; 
     --cor2:#a79b83;
-    --cor3:#bbb2a1;  
+    --cor3:#bbb2a1;
+    --cor4:#ffffff;
+    --cor5:#010101;
+    --azul:#074c91; 
+    /*TIPOS DE FONTE*/
 }
 
+/* === BARRA SUPERIOR COM MENUS === */
 header{
     background-image: linear-gradient( to right, var(--cor1), var(--cor2), var(--cor3));
     width: 100vw;
     height: 13vh;
+}
+header, .menu-main, .links-acesso{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
+.menu-main{
+    width: 75vw;
+}
+.links-acesso{
+    width: 25vw;
+}
 
 
+/* === SEÇÃO PRINCIPAL === */
 section{
     width: 100vw;
     height: 87vh;
     display: flex;
     flex-direction: row;
 }
+
+/* === BOTÕES === */
+.btn{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btn-active{
+    background-color: var(--azul);
+    color: var(--cor4);
+}
+.btn-inactive{
+    background-color: var(--cor4);
+    border: 1px solid var(--cor4);
+}
+
+
+/*
 .menu{
     background-image: linear-gradient( to bottom, var(--cor1), var(--cor2), var(--cor3));
     width: 17vw;
@@ -36,3 +73,4 @@ section{
     width: 83vw;
     height: 100%;
 }
+*/
